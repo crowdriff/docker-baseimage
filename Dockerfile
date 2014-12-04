@@ -1,8 +1,11 @@
-# Version 1.0
+# Version 1.1
 
 FROM phusion/baseimage:0.9.15
 
-MAINTAINER Abhinav Ajgaonkar <abhinav316@gmail.com>
+MAINTAINER Abhinav Ajgaonkar <abhi@crowdriff.com>
+
+ENV LANG C.UTF-8
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
     apt-get update; apt-get upgrade -y -qq; \
